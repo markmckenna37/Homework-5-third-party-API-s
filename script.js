@@ -31,48 +31,19 @@ console.log(parseInt(mom))
 //     textElements.push($(".text").val().trim())
 //     console.log(textElements)
 // }
-// $(".saveBtn").on("click", function() {
-//     for (var i = 0; i < 12; i++) {
-//     if($(".saveBtn"))
-//     }
+
+
+// function that pulls the index number from each button and stores the text value to local storage
+$(".saveBtn").on("click", function() {
+    var index = $(".saveBtn").index( this );
+    localStorage.setItem("Text" + index, $("#" + index).val())
+});
+
+
+
+
+
+// $(".0").on("click", function() {
+//     localStorage.setItem("Text0", $("#7am").val().trim())
+//     addText();
 // })
-$(".0").on("click", function() {
-    localStorage.setItem("Text0", $("#7am").val().trim())
-    addText();
-})
-$(".1").on("click", function() {
-    localStorage.setItem("Text1", $("#8am").val().trim())
-})
-$(".2").on("click", function() {
-    localStorage.setItem("Text2", $("#9am").val().trim())
-})
-$(".3").on("click", function() {
-    localStorage.setItem("Text3", $("#10am").val().trim())
-})
-$(".4").on("click", function() {
-    localStorage.setItem("Text4", $("#11am").val().trim())
-})
-$(".5").on("click", function() {
-    localStorage.setItem("Text5", $("#12pm").val().trim())
-})
-$(".6").on("click", function() {
-    localStorage.setItem("Text6", $("#1pm").val().trim())
-})
-$(".7").on("click", function() {
-    localStorage.setItem("Text7", $("#2pm").val().trim())
-})
-$(".8").on("click", function() {
-    localStorage.setItem("Text8", $("#3pm").val().trim())
-})
-$(".9").on("click", function() {
-    localStorage.setItem("Text9", $("#4pm").val().trim())
-})
-$(".10").on("click", function() {
-    localStorage.setItem("Text10", $("#5pm").val().trim())
-})
-$(".11").on("click", function() {
-    localStorage.setItem("Text11", $("#6pm").val().trim())
-})
-$(".12").on("click", function() {
-    localStorage.setItem("Text12", $("#7pm").val().trim())
-})
